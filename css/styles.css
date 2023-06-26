@@ -1,0 +1,114 @@
+/* external css */
+
+/* CSS SYNTAX
+
+    < selectors > {
+        < css-property > : <property-value>;
+        < css-property > : <property-value>;
+    }
+
+    selectors
+     - element / tag selector 
+          eg body , h1, p , img, table , a
+    - class
+    - id
+
+*/
+
+/* 
+    first link this css file to html file
+    <link rel="stylesheet" href="./css/styles.css">
+*/
+
+/* body{
+    background-color: rgb(129, 125, 125);
+    color:white
+} */
+
+/* a{
+    color:orange
+} */
+
+
+
+table {
+    border: 1px solid;
+    border-collapse: collapse
+}
+
+th,td{
+    border:1px solid black;
+    padding:16px
+}
+
+
+
+h2 {
+    color: red;
+    color: rgb(255, 0, 0);
+    color:#FF0000;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    margin-left: 16px;
+    
+}
+
+p{
+    text-align: justify;
+    border: 1px solid red;
+    padding: 16px;
+    /* margin:16px;
+    margin-left:48px;
+    margin-top:48px;
+    margin-right:48px;
+    margin-bottom:48px; */
+}
+
+
+#table-two{
+    margin-top: 32px;
+}
+
+/* #table-one-total{
+    text-align: center;
+    font-weight: bold;
+}
+
+#table-two-total{
+    text-align: center;
+    font-weight: bold;
+} */
+
+.table-total{
+    text-align: center;
+    font-weight: bold;
+}
+
+.text-red{
+    color:red;
+}
+
+
+.text-xl{
+    font-size: 20px;
+}
+.text-bold{
+    font-weight: bold;
+}
+
+
+#simple-text{
+    margin:0;
+    padding:0;
+    border: none;
+}
+
+.active{
+    color:red;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}

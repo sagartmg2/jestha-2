@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  0 1 0 */
+        /* selector */
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            color: white;
+        }
+
+        /* 001 */
+        div {
+            background-color: orange;
+        }
+
+        /* 100 */
+        /* #black-box{
+            background-color: black;
+        } */
+
+        /* 012 */
+        body div.box {
+            background-color: cyan;
+        }
+
+        /* 011 */
+        div.box {
+            background-color: greenyellow;
+        }
+
+
+        /* 010 */
+        .box {
+            background-color: red;
+        }
+
+
+
+        div {
+            background-color: teal;
+            font-size: 48px;
+            text-transform: uppercase;
+        }
+
+        /* 011 */
+        div.box {
+            background-color: red !important;
+        }
+        
+        /* 010 */
+        .box {
+            background-color: orange !important;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#">Home</a>
+        <a href="./about-us.html">about</a>
+        <a href="./courses/python.html">python</a>
+        <a href="./courses/upcomming/qa.html">Qa</a>
+    </header>
+
+    <h1>specificity score // css priority</h1>
+    <p>!important > inline-css> id > class > tag/element</p>
+    <hr>
+
+    <div class="box orange" id="orange-box" style="background: black;">
+        box-1
+    </div>
+
+
+</body>
+
+</html>

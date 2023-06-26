@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,
+        h2,
+        hr {
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            padding-left: 32px;
+        }
+
+        p {
+            padding: 16px;
+        }
+
+        .box {
+            border: 10px solid black;
+            width: 375px;
+            padding: 20px;
+            margin: 20px;
+
+        }
+
+        .box .text-red {
+            color: red;
+        }
+
+        .small {
+            width: 200px;
+        }
+
+        a.active {
+            color: red;
+        }
+
+        .card {
+            text-align: center;
+            border: 1px solid;
+            margin: 16px 8px;
+            width:300px;
+            height:300px;
+        }
+
+        .card h2 {
+            color: red;
+
+        }
+
+        .card.active {
+            border: 1px solid red;
+            box-shadow: 2px 2px 9px;
+        }
+
+        /* pseudo class */
+        header  a:hover{
+            color:red
+        }
+        .card:hover{
+            border: 1px solid red;
+            box-shadow: 2px 2px 9px;
+        }
+
+       
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="">Home</a>
+        <a href="./about-us.html">about</a>
+        <a href="./courses/python.html">python</a>
+        <a href="./courses/upcomming/qa.html">Qa</a>
+        <a href="./combined-selectors.html" class="active">
+            <span class="underline ">combined </span>
+            <span class="no-underline"> selectors</span>
+        </a>
+    </header>
+
+
+    <div class="card">
+        <h2>$100</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, consequatur. Amet odit praesentium itaque
+            atque, distinctio libero. Modi, accusantium tempore sint fugiat numquam nostrum quis qui officiis obcaecati
+            atque praesentium?</p>
+    </div>
+    <div class="card active text-xl">
+        <h2>$50</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, consequatur. Amet odit praesentium itaque
+            atque, distinctio libero. Modi, accusantium tempore sint fugiat numquam nostrum quis qui officiis obcaecati
+            atque praesentium?</p>
+    </div>
+    <div class="card">
+        <h2>$25</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, consequatur. Amet odit praesentium itaque
+            atque, distinctio libero. Modi, accusantium tempore sint fugiat numquam nostrum quis qui officiis obcaecati
+            atque praesentium?</p>
+    </div>
+
+    <hr>
+
+    <h1>comibination of selectors</h1>
+    <hr>
+
+    <h2>Selector Types</h2>
+    <ul>
+        <li>
+            <a href="https://www..."> universal</a>
+        </li>
+        <li>
+            <a href="https://www..."> id</a>
+        </li>
+        <li>class</li>
+        <li>elemnt/ tag</li>
+    </ul>
+    <hr>
+
+    <h2>combined combined-selectors Types</h2>
+    <ul>
+        <li>descendent</li>
+        <li>or</li>
+        <li>and</li>
+        <li>attribute</li>
+        <li>general selector</li>
+        <li>adjescent selector</li>
+    </ul>
+
+    <hr>
+    <h2>Box-Sizing : border-box</h2>
+
+    <div class="box active">
+        <p class="text-red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic aliquid eius eos eaque
+            earum repudiandae
+            veniam incidunt voluptatibus suscipit aliquam, commodi magnam mollitia iusto laboriosam facere quisquam
+            quia! Aut.</p>
+        <p class="text-red">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas odit soluta id commodi
+            sapiente quaerat quae
+            minus labore consequatur rem? Perferendis dolor laborum sequi tempora distinctio consequuntur inventore
+            laudantium quo?</p>
+    </div>
+
+    <hr>
+
+    <div class="box small">
+        <p>
+            small box
+        </p>
+    </div>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, tempore minus quibusdam minima incidunt
+        accusamus! Possimus sit totam in! Culpa omnis alias natus quam, aut harum iste cumque error. Porro?</p>
+    <p class="text-red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, tempore minus quibusdam
+        minima incidunt accusamus! Possimus sit totam in! Culpa omnis alias natus quam, aut harum iste cumque error.
+        Porro?</p>
+    <button> Submition</button>
+    <hr>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, tempore minus quibusdam minima incidunt
+            accusamus! Possimus sit totam in! Culpa omnis alias natus quam, aut harum iste cumque error. Porro?</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, tempore minus quibusdam minima incidunt
+        accusamus! Possimus sit totam in! Culpa omnis alias natus quam, aut harum iste cumque error. Porro?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, tempore minus quibusdam minima incidunt
+        accusamus! Possimus sit totam in! Culpa omnis alias natus quam, aut harum iste cumque error. Porro?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, tempore minus quibusdam minima incidunt
+        accusamus! Possimus sit totam in! Culpa omnis alias natus quam, aut harum iste cumque error. Porro?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, tempore minus quibusdam minima incidunt
+        accusamus! Possimus sit totam in! Culpa omnis alias natus quam, aut harum iste cumque error. Porro?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, tempore minus quibusdam minima incidunt
+        accusamus! Possimus sit totam in! Culpa omnis alias natus quam, aut harum iste cumque error. Porro?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, tempore minus quibusdam minima incidunt
+        accusamus! Possimus sit totam in! Culpa omnis alias natus quam, aut harum iste cumque error. Porro?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, tempore minus quibusdam minima incidunt
+        accusamus! Possimus sit totam in! Culpa omnis alias natus quam, aut harum iste cumque error. Porro?</p>
+
+</body>
+
+</html>

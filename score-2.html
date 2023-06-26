@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 013 */
+        body div.paragraphs p {
+            color: red;
+        }
+
+        /* 012 */
+        div.paragraphs p {
+            color: black;
+        }
+
+        /* 003 */
+        body div p {
+            color: aquamarine;
+        }
+
+        /* 002 */
+        div p {
+            color: bisque;
+        }
+
+        /* 001 */
+        p {
+            color: red
+        }
+
+        /* 001 */
+        p {
+            color: cyan;
+        }
+
+        /* 010*/
+        /* 011 */
+        .paragraphs,
+        .paragraphs p {
+            color: red
+        }   
+
+
+        /* 112 */
+        div#orange.paragraphs p{
+            color: bisque;
+        }
+        
+        /* 111 */
+        #orange.paragraphs p{
+            color: bisque;
+        }
+
+        /* 104 */
+        html body div#orange p {
+            color: lightgreen;
+        }
+
+        /* 1 0 1 */
+        #orange p {
+            color: orange
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="paragraphs" id="orange">
+        <ul>
+            <li>one</li>
+            <li>two</li>
+        </ul>
+        <p>para-1</p>
+        <p>para-2</p>
+        <p>para-3</p>
+        <span>some text</span>
+    </div>
+
+</body>
+
+</html>

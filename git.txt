@@ -1,0 +1,16 @@
+1. git init
+2. git remote add origin <git-url> 
+    eg git remote add origin https://github.com/sagartmg2/jestha-2
+3. (optional )to check if linked or not 
+    git remote -v
+
+4.git add <file_name>
+5.git commit -m "<message of what have you done>"
+6.git push origin <branch_name>
+    eg git push origin master
+
+git status // compares online-repo and local-repo
+
+U - untracked files // new files
+A - added // when we do git add <file_name>
+M
