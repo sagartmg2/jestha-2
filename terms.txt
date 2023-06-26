@@ -1,0 +1,18 @@
+html syntax
+    <tag>  contents... </tag>
+
+    every tags shoudl have closing tags
+
+examples of tags
+ - html
+ - head
+ - body
+ ...........
+
+terms
+    - tags  or element
+    - attributes
+
+shortcut
+    - to move lines hold alt-key and press down/up arrow
+    - to copy lines hold alt+shift key and press down/up arrow
