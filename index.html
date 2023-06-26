@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content=" this is page for  ...... ">
+    <meta name="keywords" content=" base template ffor thml , html for beginner,  ">
+
+    <!-- external css -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- internal css -->
+    <style>
+        /* syntax  
+            selector {
+                css-property : css-property-value
+            }
+        
+        */
+
+        header ul {
+            padding: 0;
+        }
+
+        header li {
+            display: inline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 
+    <a href="https://www.google.com">google</a>
+    <a href="https://www.facebook.com">facebook</a> -->
+
+    <!-- <a href="D:\Zoom\jestha-1\Jesthacodes\about-us.html">about</a> -->
+    <!-- <a href="about-us.html">about</a> -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="./about-us.html">about</a></li>
+                <li><a href="./courses/python.html">python</a></li>
+                <li><a href="./courses/upcomming/qa.html">Qa</a></li>
+                <li><a href="./combined-selectors.html"> combined-selectors</a></li>
+                <li><a href="./score.html"> specificity score</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <p>one &amp; &lt; p&gt;one&nbsp;two </p>
+    <p>TWO</p>
+    <p>THREE</p>
+
+    <h1>Web</h1>
+    <hr />
+    <img src="https://www.codingdojo.com/blog/wp-content/uploads/webdevbeginners.jpg.webp" height="300">
+    <!-- <img src="./web-2.jpg" alt="" height="300"> -->
+    <img src="./assets/images/web-3.jpg" alt="picture of web-3" width="300">
+    <!-- we must have only one h1 per page for SEO perspective -->
+    <!-- <h1>MERN</h1> -->
+
+    <hr>
+    <h2>Reserach on </h2>
+    <ul>
+        <li> Box sizing</li>
+        <li>
+            <p id="simple-text">Combination of selector</p>
+            <ul>
+                <li>descendent selector</li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <h2>Comment</h2>
+    <p>ctr + /</p>
+
+    <hr>
+    <h2>
+        css types
+    </h2>
+    <ul>
+        <li style="color:red">inline -using style attribute</li>
+        <li>internal</li>
+        <li>extrnal</li>
+    </ul>
+
+
+    <span>one  ee &</span>
+    <span>two</span>
+    <span>three</span>
+
+    <hr>
+    <h2>
+        Box Model - <span style="font-size: 14px;">all elements in html is a box</span>
+    </h2>
+    <ul>
+        <li>margin</li>
+        <li>padding</li>
+        <li>border</li>
+    </ul>
+    <h2>
+        Elements
+    </h2>
+    <ol type="I">
+        <li>block</li>
+        <li>inline</li>
+        <li>inline-block</li>
+    </ol>
+    <p class="text-red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus explicabo distinctio ipsum doloribus ea velit
+        tenetur! Architecto sequi eos molestias iusto natus, unde, veniam ea eum reiciendis necessitatibus vitae
+        provident.
+    </p>
+
+    <form>
+        <input placeholder="email">
+        <input placeholder="password">
+    </form>
+    <hr>
+
+    <h2>
+        Attributes
+    </h2>
+    <ul>
+        <li>name</li>
+        <li>id</li>
+        <li>class</li>
+        <li>for</li>
+        <li>value</li>
+    </ul>
+    <p class="text-red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ex autem! Id sed quod explicabo neque a. Cumque
+        ratione molestiae neque amet et, expedita molestias distinctio consequatur dicta necessitatibus aut.
+    </p>
+    <hr>
+    <h2>
+        Link
+    </h2>
+    <ul>
+        <li>absolute url/path</li>
+        <li class="text-xl text-bold"><i>relative url/path </i></li>
+    </ul>
+    <hr>
+    <h2>Table</h2>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mobile</td>
+                    <td>1</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>Mobile</td>
+                    <td>1</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>Mobile</td>
+                    <td>1</td>
+                    <td>100000</td>
+                </tr>
+
+            </tbody>
+            <tfoot class="text-xl text-bold">
+                <tr>
+                    <td colspan=2 id="table-one-total" class="table-total text-red">Total</td>
+                    <td>3000000</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </main>
+
+    <table id="table-two">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mobile</td>
+                <td>1</td>
+                <td>100000</td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td>1</td>
+                <td>100000</td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td>1</td>
+                <td>100000</td>
+            </tr>
+
+        </tbody>
+        <tfoot class="text-xl text-bold">
+            <tr>
+                <td colspan=2 id="table-one-total" class="table-total text-red">Total</td>
+                <td>3000000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- footer is a symantic tag -->
+    <footer>
+        <a href="https://www.facebook.com" target="_blank">facebook</a>
+        <a href="https://www.facebook.com" target="_blank">github</a>
+        <a href="https://www.facebook.com" target="_blank">youtube</a>
+    </footer>
+
+
+</body>
+
+</html>
