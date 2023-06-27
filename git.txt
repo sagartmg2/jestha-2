@@ -4,9 +4,9 @@
 3. (optional )to check if linked or not 
     git remote -v
 
-4.git add <file_name> // for adding individual files
-    or git add . // for adding all files
 
+4.git add <file_name> // `for adding individual files
+    or git add . // for adding all files
 5.git commit -m "<message of what have you done>"
 6.git push origin <branch_name>
     eg git push origin master
@@ -20,3 +20,7 @@ M - modified existing file
 
 branches
     eg main, master 
+
+to create new branch 
+    git checkout -b <branch_name>
+    eg: git checkout -b auth
