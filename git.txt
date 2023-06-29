@@ -24,3 +24,11 @@ branches
 to create new branch 
     git checkout -b <branch_name>
     eg: git checkout -b auth
+to switch between branches  
+    git checkout <existing_branch_name>
+    eg. git checkout master
+    eg. git checkout auth
+to merge branches
+    git merge <branch_name>
+    eg: git merge auth // you should be some other branch than auth
+    
