@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* reset-css */
+        * {
+            box-sizing: border-box;
+        }
+
+        a {
+            color: inherit
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+
+        /* end-reset-css */
+
+
+
+
+        .box {
+            width: 100px;
+            border: 1px solid;
+        }
+
+        .small {
+            height: 50px;
+            width: 50px;
+        }
+
+        .container{
+            border: 3px solid red;
+            padding: 2rem;
+            position: relative;
+
+        }
+
+        .parent{
+            position: relative;
+        }
+
+        .child {
+            position: absolute;
+            top: -1rem;
+            right: -1rem;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <br />
+    <hr>
+    <hr>
+    <hr>
+
+    <div class="container">
+
+        <div class="parent box">
+            <p>realtive</p>
+            <div class="child box small">
+                absolute
+            </div>
+            <div>
+                <p>some ohter contents</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

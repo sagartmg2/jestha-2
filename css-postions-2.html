@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* reset-css */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        a {
+            color: inherit
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+
+        /* end-reset-css */
+
+
+
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+
+        .static {
+            position: static;
+            left: 100px;
+        }
+
+        .relative {
+            position: relative;
+            left: 100px;
+            top: 10px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            background-color: red;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 100px;
+            right: 10px;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: teal;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            gap: 1rem;
+            padding-left: 0;
+            background-color: #333;
+            color: whitesmoke;
+            padding: 1rem .5rem;
+            z-index: 111;
+        }
+
+
+        .sticky-wrapper {
+            border: 3px solid red;
+
+        }
+        header{
+            border: 1px solid red;
+            position: sticky;
+            top: 0;
+            z-index: 99999999999
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#"> home</a>
+                </li>
+                <li>
+                    <a href="#"> home</a>
+                </li>
+                <li>
+                    <a href="#"> home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="box static">static</div>
+    <div class="wrapper">
+        <div class="box relative">relative</div>
+    </div>
+    <div class="box absolute">absolute</div>
+    <div class="box fixed">fixed</div>
+    <div class="sticky-wrapper">
+
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <div class="box sticky">sticky</div>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+    </div>
+
+
+    <hr>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias placeat doloremque, blanditiis sint magni
+        quidem dolorum labore dolor error ex ullam temporibus aperiam laudantium quas culpa laborum odit dolores? Totam.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias placeat doloremque, blanditiis sint magni
+        quidem dolorum labore dolor error ex ullam temporibus aperiam laudantium quas culpa laborum odit dolores? Totam.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias placeat doloremque, blanditiis sint magni
+        quidem dolorum labore dolor error ex ullam temporibus aperiam laudantium quas culpa laborum odit dolores? Totam.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias placeat doloremque, blanditiis sint magni
+        quidem dolorum labore dolor error ex ullam temporibus aperiam laudantium quas culpa laborum odit dolores? Totam.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias placeat doloremque, blanditiis sint magni
+        quidem dolorum labore dolor error ex ullam temporibus aperiam laudantium quas culpa laborum odit dolores? Totam.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias placeat doloremque, blanditiis sint magni
+        quidem dolorum labore dolor error ex ullam temporibus aperiam laudantium quas culpa laborum odit dolores? Totam.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias placeat doloremque, blanditiis sint magni
+        quidem dolorum labore dolor error ex ullam temporibus aperiam laudantium quas culpa laborum odit dolores? Totam.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias placeat doloremque, blanditiis sint magni
+        quidem dolorum labore dolor error ex ullam temporibus aperiam laudantium quas culpa laborum odit dolores? Totam.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias placeat doloremque, blanditiis sint magni
+        quidem dolorum labore dolor error ex ullam temporibus aperiam laudantium quas culpa laborum odit dolores? Totam.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias placeat doloremque, blanditiis sint magni
+        quidem dolorum labore dolor error ex ullam temporibus aperiam laudantium quas culpa laborum odit dolores? Totam.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias placeat doloremque, blanditiis sint magni
+        quidem dolorum labore dolor error ex ullam temporibus aperiam laudantium quas culpa laborum odit dolores? Totam.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias placeat doloremque, blanditiis sint magni
+        quidem dolorum labore dolor error ex ullam temporibus aperiam laudantium quas culpa laborum odit dolores? Totam.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias placeat doloremque, blanditiis sint magni
+        quidem dolorum labore dolor error ex ullam temporibus aperiam laudantium quas culpa laborum odit dolores? Totam.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias placeat doloremque, blanditiis sint magni
+        quidem dolorum labore dolor error ex ullam temporibus aperiam laudantium quas culpa laborum odit dolores? Totam.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias placeat doloremque, blanditiis sint magni
+        quidem dolorum labore dolor error ex ullam temporibus aperiam laudantium quas culpa laborum odit dolores? Totam.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias placeat doloremque, blanditiis sint magni
+        quidem dolorum labore dolor error ex ullam temporibus aperiam laudantium quas culpa laborum odit dolores? Totam.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias placeat doloremque, blanditiis sint magni
+        quidem dolorum labore dolor error ex ullam temporibus aperiam laudantium quas culpa laborum odit dolores? Totam.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias placeat doloremque, blanditiis sint magni
+        quidem dolorum labore dolor error ex ullam temporibus aperiam laudantium quas culpa laborum odit dolores? Totam.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias placeat doloremque, blanditiis sint magni
+        quidem dolorum labore dolor error ex ullam temporibus aperiam laudantium quas culpa laborum odit dolores? Totam.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias placeat doloremque, blanditiis sint magni
+        quidem dolorum labore dolor error ex ullam temporibus aperiam laudantium quas culpa laborum odit dolores? Totam.
+    </p>
+
+</body>
+
+</html>
