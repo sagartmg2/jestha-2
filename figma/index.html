@@ -9,27 +9,29 @@
 </head>
 
 <body>
-    <header>
+    <header class="container">
         <div class="logo_wrapper">
             <img src="./assets/images/logo.png" />
             <p>Lasles VPN</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">About </a></li>
-                <li><a href="#">Features </a></li>
-                <li><a href="#">Testimonials </a></li>
-                <li><a href="#">contact </a></li>
-                <li><a href="#">pricing </a></li>
-            </ul>
-        </nav>
-        <div>
-            <button class="signin">sign In</button>
-            <button class="signup">sign up</button>
+        <div class="collapse drawer" id="drawer">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">About </a></li>
+                    <li><a href="#">Features </a></li>
+                    <li><a href="#">Testimonials </a></li>
+                    <li><a href="#">contact </a></li>
+                    <li><a href="#">pricing </a></li>
+                </ul>
+            </nav>
+            <div class="authentication">
+                <button class="signin">sign In</button>
+                <button class="signup">sign up</button>
+            </div>
         </div>
+        <img onclick=" document.getElementById('drawer').classList.add('open')  " class="hamburger-menu" src="./assets/images/menu.svg" alt="">
     </header>
-
-
+<script src="./js/index.js"></script>
 </body>
 
 </html>
