@@ -15,6 +15,9 @@
             <p>Lasles VPN</p>
         </div>
         <div class="collapse drawer" id="drawer">
+            <img class="close-icon" id="close-icon" src="./assets/images/close.svg" alt=""
+                onclick="document.getElementById('drawer').classList.remove('open')"
+            >
             <nav>
                 <ul class="nav-links">
                     <li><a href="#">About </a></li>
@@ -26,11 +29,15 @@
             </nav>
             <div class="authentication">
                 <button class="signin">sign In</button>
-                <button class="signup">sign up</button>
+                <button class="signup active">sign up</button>
             </div>
         </div>
         <img onclick=" document.getElementById('drawer').classList.add('open')  " class="hamburger-menu" src="./assets/images/menu.svg" alt="">
     </header>
+    <main>
+        <div class="circle"></div>
+        
+    </main>
 <script src="./js/index.js"></script>
 </body>
 
