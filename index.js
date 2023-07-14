@@ -1,102 +1,122 @@
-/* variables  // container/box that can store some values */
-/* data types
-    primitive data-types
-        1. String - text
-        2. number
-        3. Boolean 
-            -true
-            -false
-        4. undefined // in js only
-        5. null
-    non-prmive  // collections// reference-data-types
-        1. array
-        2. object
-*/
 
-/* var vs let vs const */
-let price = 1000
+let count = 100  // declaration and initalziation.  
+
+let brand; // declartion
+brand = "nike" // initialzation
+brand = "puma" // re-initialzation
+
 let inStock = true
 
-/* declartion vs initialzation */
-let color; // color variable declared
-console.log("before color =", color)
 
-color = "red" // color variable is initialzied.
-color = "white" // re-initializaiton
+let color;
+console.log("color", color) // undefined
 
-console.log("after color =", color)
+/* data-types  string,number,boolean,undefined,null */
 
 
-var count;
-console.log("before count", count)
-count = 100
-count = 200
-count = 300
-console.log("after count", count)
+/* array and objects // collections 
+    array -syntax 
+        let <arrayVaraible> = [ <element1>,<elment2>,<element3>  ]
+    
+    array: collection of different values
+    most of the time its is collection of similar data-types
 
+    
+    object-syntax
 
-
-
-const PI = 3.14
-const ROTATION = "W-E"
-// ROTATION = "E-W"  // constatnt variables cannot be re-initialized.
-
-
-var count = 30000
-console.log("count", count)
-
-let brand_name = "nike"
-let brandName = "nike"
-// let brand = "puma"  // cannot create the same variable if declared using let keyword
-
-
-// let status = undefined
-let data = null //  empty // when we have to defined data as empty explicitely
-
-
-
-
-let fruit1 = "apple"
-let fruit2 = "orange"
-let fruit3 = "kiwi"
-
-// let fruits = "apple","orange" 
-
-/* Array   
-        - collection of differnet values
-*/
-
-let fruites = ["apple", "oranges"]
-console.log(fruites)
-
-/* Object  
-    syntax
-    let <objecVaraible> = {  
+    let <obj> = {
+        <key> : <value>,
         <property> : <value>,
-        <key>  : <value>, 
-        <attribute> : <value>
-     }
+        <attribute> : <value>,
+    }
+
 */
 
-let projectorName = "dlp"
-let projectorColor = "black"
-let projectorPrice = 50000
+// let courses = "web","mern","pytohn"
+// let courses = ["web", "mern", "python"]
 
-let projector2Name = "acer"
-let projector2Color = "grey"
-let projector2Price = 40000
-
-let projector1 = {
-    name: "dip",
-    color: "black",
-    price: 5000
+let course1 = {
+    "title": "web",
+    "duration": 2,
+    price: 15000
 }
 
-let projector2 = {
-    name: "acer",
-    color: "grey",
-    price: 40000
+let course2 = {
+    title: "mern",
+    duration: 3,
+    price: 15000
 }
 
-console.log(projector1)
+let course3 = {
+    title: "python",
+    duration: 2.5,
+    price: 15000
+}
+
+let courses = [course1, course2, course3, { title: "graphic", price: 12000, duration: 2 }]
+console.log(courses)
+
+
+let activeStatus = [true, false, true]
+console.log("activeStatus", activeStatus)
+
+
+// let ages = [10,0 30, 20, "thirty", {title:"web"},null,undefined] // not right way
+let ages = [1, 30, 20]
+console.log("ages", ages)
+
+
+
+
+// let colors = [0th index ,1st index ,2nd index]
+// let colors = [<element1>,<element2>,<element3>]
+let colors = ["red", "white", "teal"]
+
+/* TODO: create a new array of colors which has both name as well as hex */
+
+// console.log({"colors":colors})
+// console.log({colors:colors})
+// console.log({colors})
+
+/* INDEXs in array  !!! important    -- indexes always starts with 0 */
+console.log("in 0th index we have", colors[0])
+console.log("in 1st index we have", colors[1])
+console.log("before -- in 2nd index we have", colors[2])
+
+
+
+// let projectorColor = "white"
+// projectorColor = "black"
+
+colors[2] = "cyan"
+
+console.log("after -- in 2nd index we have", colors[2])
+
+let green = "green"
+
+let hexColors = [
+    {
+        name: "red",
+        hexValue: "#ff000",
+        rgbValue: "rgba(255,0,0)"
+    },
+    {
+        name: "green",
+        hexValue: "#00800",
+        rgbValue: "rgba(0,255,0)"
+    }
+]
+
+console.log(hexColors)
+
+
+
+
+
+
+
+
+
+
+
 
