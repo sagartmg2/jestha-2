@@ -1,122 +1,116 @@
+/* 
 
-let count = 100  // declaration and initalziation.  
-
-let brand; // declartion
-brand = "nike" // initialzation
-brand = "puma" // re-initialzation
-
-let inStock = true
-
-
-let color;
-console.log("color", color) // undefined
-
-/* data-types  string,number,boolean,undefined,null */
-
-
-/* array and objects // collections 
-    array -syntax 
-        let <arrayVaraible> = [ <element1>,<elment2>,<element3>  ]
-    
-    array: collection of different values
-    most of the time its is collection of similar data-types
-
-    
-    object-syntax
-
-    let <obj> = {
-        <key> : <value>,
-        <property> : <value>,
-        <attribute> : <value>,
-    }
-
+    TODO: create an array of rooms in your house.
 */
 
-// let courses = "web","mern","pytohn"
-// let courses = ["web", "mern", "python"]
+let room1 = "kitchen"
+let room2 = "living"
+let room3 = "bedroom"
+let room4 = "bedroom2"
 
-let course1 = {
-    "title": "web",
-    "duration": 2,
-    price: 15000
+let room5 = {
+    room: "kitchen",
+    color: "grren",
+    height: 10,
+    width: 10,
+    length: 10,
+    measurentUnit: "feet"
 }
 
-let course2 = {
-    title: "mern",
-    duration: 3,
-    price: 15000
+let room6 = {
+    room: "living",
+    color: "pink",
+    height: 10,
+    width: 10,
+    length: 15,
+    measurentUnit: "feet"
 }
 
-let course3 = {
-    title: "python",
-    duration: 2.5,
-    price: 15000
-}
 
-let courses = [course1, course2, course3, { title: "graphic", price: 12000, duration: 2 }]
-console.log(courses)
-
-
-let activeStatus = [true, false, true]
-console.log("activeStatus", activeStatus)
-
-
-// let ages = [10,0 30, 20, "thirty", {title:"web"},null,undefined] // not right way
-let ages = [1, 30, 20]
-console.log("ages", ages)
-
-
-
-
-// let colors = [0th index ,1st index ,2nd index]
-// let colors = [<element1>,<element2>,<element3>]
-let colors = ["red", "white", "teal"]
-
-/* TODO: create a new array of colors which has both name as well as hex */
-
-// console.log({"colors":colors})
-// console.log({colors:colors})
-// console.log({colors})
-
-/* INDEXs in array  !!! important    -- indexes always starts with 0 */
-console.log("in 0th index we have", colors[0])
-console.log("in 1st index we have", colors[1])
-console.log("before -- in 2nd index we have", colors[2])
-
-
-
-// let projectorColor = "white"
-// projectorColor = "black"
-
-colors[2] = "cyan"
-
-console.log("after -- in 2nd index we have", colors[2])
-
-let green = "green"
-
-let hexColors = [
+// let rooms = [room1, room2]
+// let rooms = ["kitchen", "living"]
+// let rooms = ["kitchen", "living"]
+// let rooms = [room3, room5, room6]
+let rooms = [
     {
-        name: "red",
-        hexValue: "#ff000",
-        rgbValue: "rgba(255,0,0)"
+        room: "kitchen",
+        color: "green",
+        height: 10,
+        width: 10,
+        length: 10,
+        measurentUnit: "feet"
     },
     {
-        name: "green",
-        hexValue: "#00800",
-        rgbValue: "rgba(0,255,0)"
+        room: "living",
+        color: "pink",
+        height: 10,
+        width: 10,
+        length: 15,
+        measurentUnit: "feet"
     }
 ]
 
-console.log(hexColors)
+/* 
+    TODO: 
+    kitchen room has green color
+    living room has pink color
+*/
+// console.log("rooms = ", rooms)
 
 
 
 
+// let arrIndexs = [0, 1, 2, 3]  // indexes alwys starts with 0
+let fruits = ["apple", "orange", "kiwi", "pineapple"]
+// console.log("in 2nd index we have", fruits[2])
+
+/* object (key,property,attribute,field) : <value> */
+
+let projector1 = {
+    "brand": "viewsonic",
+    "price": 50000,
+    "model": "xyz"
+}
 
 
 
+let projector2 = {
+    brand: "acer",
+    price: 100000,
+    model: "xyz-100"
+
+}
+
+let projector3 = {
+    brand: "acer",
+    price: 200000,
+    model: "xyz-200"
+}
 
 
+/* TODO:
+    price of viewson-xyz is 500000
+    price of acer-xyz-100 is 100000
+    price of acer-xyz-200 is 200000
+*/
+console.log(projector1.brand)
 
+// console.log("hello","world")
+// console.log("hello"+" "+"world")
 
+console.log("price of", projector1.brand + "-" + projector1.model + " is", projector1.price)
+console.log("price of", projector2.brand + "-" + projector2.model + " is", projector2.price)
+console.log("price of", projector3.brand + "-" + projector3.model + " is", projector3.price)
+
+/*  
+TEMPLATE LITERAL  -- MUST KNOW FOR REACT  // string literal
+    back tick ` 
+
+*/
+
+let greeting = "Nihao"
+
+console.log(greeting, "world ")
+console.log(greeting + ' world')
+console.log(`${greeting} world`)
 
