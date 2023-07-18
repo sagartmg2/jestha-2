@@ -1,7 +1,7 @@
+
 /* iphone 9's price is $549 */
 /* Phone X's price is $899 */
 /* Samsung Universe 9's price is $1249 */
-
 
 
 let products = [
@@ -558,3 +558,47 @@ let products = [
         ]
     }
 ]
+
+// console.log(`${products[0].title}'s price is ${products[0].price}  pound  `)
+// console.log(`${products[1].title}'s price is $${products[1].price} pound  `)
+// console.log(`${products[2].title}'s price is $${products[2].price} pound  `)
+// console.log(`${products[3].title}'s price is $${products[3].price} pound  `)
+
+
+/* DRY - donot repeat yourself */
+
+/* function -
+        - common functionality
+        - reusuable  // create once, use again and again.    
+*/
+
+function printProductPrice(index) {  // index here is called parameter
+    console.log(`${products[index].title}'s price is $${products[index].price} `)
+}
+
+// printProductPrice(10) // 10 here is called arguement
+// printProductPrice(20) // 20 here is called arguement
+// printProductPrice(27) 
+// printProductPrice(28) 
+// printProductPrice(29) 
+
+calculateSum(1, 2) // sum of 1 and 2 is 3
+calculateSum(10, 20) // sum of 10 and 20 is 30
+calculateSum(30, 40) // sum of 10 and 20 is 30
+
+function calculateSum(num1, num2) {
+    // console.log({ num1 }, { num2 })
+    console.log(`${num1} + ${num2} = ${num1 + num2}`)
+}
+
+
+
+
+
+
+
+
+
+// calculateSum(1,3,4,5,6,8)  // ...rest
+// calculateSum(1,3,6,8)  // ...rest
+// calculateSum(1,3,8)  // ...rest
