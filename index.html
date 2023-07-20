@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick='addList()'> add3</button>
+    <button onclick='addList()'> add4</button>
+    <button onclick="addList()"> add5</button>
+    <ul id="list">
+        <li>1</li>
+        <li>2</li>
+    </ul>
+
+    <script>
+        console.log("js connneted..")
+        console.log("",document.getElementById("list"))
+
+        function addList() {
+            let newLi = document.createElement("li");
+            newLi.innerText = "3";
+            document.getElementById("list").appendChild(newLi);
+        }
+    </script>
+
+</body>
+
+</html>
