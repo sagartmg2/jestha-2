@@ -8,9 +8,10 @@
 </head>
 
 <body>
-    <button onclick='addList()'> add3</button>
-    <button onclick='addList()'> add4</button>
-    <button onclick="addList()"> add5</button>
+    <button onclick='addList(3)'> add3</button>
+    <button onclick='addList(4)'> add4</button>
+    <button onclick='addList(5)'> add5</button>
+
     <ul id="list">
         <li>1</li>
         <li>2</li>
@@ -18,11 +19,10 @@
 
     <script>
         console.log("js connneted..")
-        console.log("",document.getElementById("list"))
 
-        function addList() {
+        function addList(number) {
             let newLi = document.createElement("li");
-            newLi.innerText = "3";
+            newLi.innerText = number;
             document.getElementById("list").appendChild(newLi);
         }
     </script>
