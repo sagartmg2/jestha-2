@@ -2,12 +2,14 @@
 /* 
     block comment     alt + shift + a
 
-        Do something nice for someone I care about is true
-        Memorize the fifty states and their capital is true
-        Watch a classic movi is false
-        Contribute code is false
+        Do something nice for someone I care about is completed...
+        Memorize the fifty states and their capital is pending..
+        Watch a classic movi is pending...
+        Contribute code is pending...
 
 */
+
+
 
 
 
@@ -191,21 +193,49 @@ let todos = [
         "todo": "Take cat on a walk",
         "completed": false,
         "userId": 15
+    },
+    {
+        "id": 30,
+        "todo": "Take cat on a walk",
+        "completed": true,
+        "userId": 15
     }
 ]
 
-// console.log(` - ${todos[0].todo} is ${todos[0].completed}`)
-// console.log(` - ${todos[1].todo} is ${todos[1].completed}`)
-// console.log(` - ${todos[2].todo} is ${todos[2].completed}`)
-// console.log(` - ${todos[3].todo} is ${todos[3].completed}`)
-// console.log(` - ${todos[4].todo} is ${todos[4].completed}`)
+// function printTodo(index) {
+//     // let output = ` - ${todos[index].todo} is `
+//     let output = " "
+//     if (todos[index].completed) {
+//         output = output + " completed"
+//     } else {
+//         output += " pending"
+//     }
+//     console.log(output)
+// }
 
 
-function printTodo(index) {
-    console.log(` - ${todos[index].todo} is ${todos[index].completed}`)
+const printTodo = (index ) => {
+    // let output = ` - ${todos[index].todo} is `
+    let output = " "
+    if (todos[index].completed) {
+        output = output + " completed"
+    } else {
+        output += " pending"
+    }
+    console.log(output)
 }
 
 // printTodo(0)
+// printTodo(1)
+// printTodo(2)
+// printTodo(3)
+
+
+for (let index = 0; index < todos.length; index++) {
+    printTodo(index)
+}
+
+
 // printTodo(1)
 // printTodo(2)
 // printTodo(3)
@@ -241,14 +271,14 @@ let number2 = 50
 // number1 = number1 + number2
 number1 += number2
 
-console.log({ number1 })
+// console.log({ number1 })
 
 
 let count = 0
 // count += 1
 // count++
 ++count
-console.log({ count })
+// console.log({ count })
 
 
 /* Conditional statements */
@@ -256,29 +286,28 @@ console.log({ count })
 let willRain = false
 let hasProbability = false
 
-if(willRain){
+if (willRain) {
     console.log("take umbrella")
-}else{
+} else {
 
-    if(hasProbability){
+    if (hasProbability) {
         console.log("you may need it.");
-    }else{
+    } else {
         console.log("no need.");
     }
-    
 }
 
 
-if(willRain){
+if (willRain) {
     console.log("take umbrella")
-}else{
+} else {
 
-    if(hasProbability){
+    if (hasProbability) {
         console.log("you may need it.");
-    }else{
+    } else {
         console.log("no need.");
     }
-    
+
 }
 
 
