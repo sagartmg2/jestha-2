@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Caluclator app</h1>
+    <pre>
+        Hint
+            - create three input fileds
+            - first number
+            - dropdown to choose the operator ( add ,multiple ,...other arthematic operators)
+            - second number
+
+        have a calculate button and on click of it, it the result should be printed in screen
+
+        Hint
+            - to change content of html , we have to do dom manipulation
+            make use of
+            - document.getElementById
+            - &lt;element&gt;.innerHTML
+    </pre>
+
+
+    <div>
+        <p>
+            result : <span id="result">0</span>
+        </p>
+        <form onsubmit="calculate(event)">
+            <input step="0.01" value="1" required type="number" name="firstInput" id="first">
+            <select name="operator">
+                <option value="">select</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">x</option>
+            </select>
+            <input step="0.01" value="2" required type="number" name="second_input" id="second">
+            <input type="submit" value="calucate">
+        </form>
+    </div>
+    <script>
+        function calculate(e) {
+            e.preventDefault();
+            let firstInput = parseFloat(e.target.firstInput.value)
+            let operator = e.target.operator.value
+            let secondInput = parseFloat(e.target.second_input.value)
+            let result = 0
+
+            // if(operator == "+"){
+            //     result = firstInput + secondInput
+            // }else if(operator == "-"){
+            //     result = firstInput - secondInput
+            // }else if(operator == "*"){
+            //     result = firstInput * secondInput
+            // }else{
+                // result  = "please select an operator first"
+            // }
+
+            switch (operator) {
+                case "+": {
+                    result = firstInput + secondInput
+                    break;
+                }
+                case "-": {
+                    result = firstInput - secondInput
+                    break
+                }
+                case "*": {
+                    result = firstInput * secondInput
+                    break
+                }
+                default:{
+                    result = "please select an operator"
+                }
+            }
+
+            document.getElementById("result").innerText = result
+        }
+
+    </script>
+
+</body>
+
+</html>

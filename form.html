@@ -13,23 +13,25 @@
     <form onsubmit="handleFormSubmit(event)">
         <div>
             <label for="username"> username</label>
-            <input type="text" id="username" name="username" value="ram">
+            <input type="text" id="username" name="username" value="shyam">
         </div>
-        <div>password:<input name="password" type="password"> </div>
+        <div>password:<input name="password" type="password"  id="password"> </div>
+        <div>age:<input name="password" type="number"> </div>
         <div>email:<input type="email" name="email" placeholder="email"> </div>
         <div>
             <label for="terms"> accept terms and conditon </label>
             <input type="checkbox" name="terms" id="terms" />
         </div>
         <div>
-            <input type="file" multiple>
+            <input type="file" multiple accept="">
         </div>
         <select name="cars" id="cars">
             <option value="1"> one</option>
-            <option value="2"> two</option>
+            <option value="2" selected > two</option>
             <option value="3"> three</option>
         </select>
         <br>
+        <button type="button" disabled>add new Field</button>
         <input type="submit">
     </form>
 
@@ -42,6 +44,7 @@
             console.log("password", event.target.password.value)
             console.log("email", event.target.email.value)
             console.log("cars", event.target.cars.value)
+            console.log("terms", event.target.terms.checked)
             console.log("form submiteed..")
         }
 
