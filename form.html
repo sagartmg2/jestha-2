@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Form</h1>
+
+    <form onsubmit="handleFormSubmit(event)">
+        <div>
+            <label for="username"> username</label>
+            <input type="text" id="username" name="username" value="ram">
+        </div>
+        <div>password:<input name="password" type="password"> </div>
+        <div>email:<input type="email" name="email" placeholder="email"> </div>
+        <div>
+            <label for="terms"> accept terms and conditon </label>
+            <input type="checkbox" name="terms" id="terms" />
+        </div>
+        <div>
+            <input type="file" multiple>
+        </div>
+        <select name="cars" id="cars">
+            <option value="1"> one</option>
+            <option value="2"> two</option>
+            <option value="3"> three</option>
+        </select>
+        <br>
+        <input type="submit">
+    </form>
+
+    <script>
+
+        const handleFormSubmit = (event) => {
+            event.preventDefault()
+            console.log(event.target) // form element 
+            console.log("username", event.target.username.value)
+            console.log("password", event.target.password.value)
+            console.log("email", event.target.email.value)
+            console.log("cars", event.target.cars.value)
+            console.log("form submiteed..")
+        }
+
+    </script>
+
+</body>
+
+</html>
