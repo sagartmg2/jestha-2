@@ -19,11 +19,15 @@ console.log("sum is ", sum(2, 4))
 console.log("type", typeof (1212))
 
 
-// const createPerson = (name,age) => {
-//     return { name,age}
-// }
+const createPerson = (name,age) => {
+    return { name,age}
+    console.log(1)
+    console.log(1)
+    console.log(1)
+    console.log(1)
+}
 
-const createPerson = (name, age) => ({ name, age })
+// const createPerson = (name, age) => ({ name, age })
 
 
 console.log(createPerson("ram", 20))
