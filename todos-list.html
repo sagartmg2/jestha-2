@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h3>hint: appendChild </h3>
+    <h3>hint: innerHTML </h3>
+    <h3>hint: localStorage </h3>
+
+    <h1>Todos List</h1>
+    <hr>
+    <form onsubmit="addTodo(event)">
+        <input type="text">
+        <!-- <input type="reset"> -->
+        <button type="submit">submit</button>
+
+    </form>
+
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li>js</li>
+    </ul>
+
+    <script>
+        const addTodo = (e) => {
+            e.preventDefault()
+
+        }
+    </script>
+
+</body>
+
+</html>
