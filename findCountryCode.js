@@ -1175,7 +1175,7 @@ let countries = [
         "code": "vn",
         "name": "Vietnam",
         "path": "vietnam",
-        region:"Asia"
+        region: "Asia"
 
     },
     {
@@ -1192,19 +1192,19 @@ let countries = [
         "code": "ye",
         "name": "Yemen",
         "path": "yemen",
-        region:"Asia"
+        region: "Asia"
     },
     {
         "code": "zm",
         "name": "Zambia",
         "path": "zambia",
-        "region":"Africa"
+        "region": "Africa"
     },
     {
         "code": "zw",
         "name": "Zimbabwe",
         "path": "zimbabwe",
-        "region":"Africa"
+        "region": "Africa"
     }
 ]
 
@@ -1227,38 +1227,54 @@ let countries = [
 */
 
 
-const findCountryCode = (input) => {
-    let code = null
+// const findCountryCode = (input) => {
+//     let code = null
 
-    countries.forEach(country => {
-        if (country.name === input) {
-            code = country.code
-        }
-    })
-    return code
+//     countries.forEach(country => {
+//         if (country.name === input) {
+//             code = country.code
+//         }
+//     })
+//     return code
+// }
+
+// const findCountryCode = (input) => {
+//     let matchedCountry = countries.find(country => {
+//         if (country.name == input) {
+//             return true
+//         }
+//         return undefined
+//     })
+//     // console.log({matchedCountry})
+//     return  matchedCountry.code
+
+// }
+const findCountryCode = (input) => {
+    /* optional chaining */
+    return countries.find(country => country.name === input)?.code
 }
 
-console.log(findCountryCode("Nepal")) // np
+console.log(findCountryCode("Nepal ")) // np
 
-const filterCountriesByRegion =  (regionName) =>{
+const filterCountriesByRegion = (regionName) => {
 
     let temp = []
 
-    countries.forEach(country =>{
-        if(country.region == regionName){
+    countries.forEach(country => {
+        if (country.region == regionName) {
             temp.push(country)  // { name:zambia,code,region}
         }
     })
 
     return temp
-} 
+}
 
 
 let africanCountries = filterCountriesByRegion("Africa")
 // let asianCountries = filterCountriesByRegion("Asia")
-// let asianCountries =  countries.filter( country => )
-console.log({africanCountries})
-console.log({asianCountries})
+let asianCountries = countries.filter(country => country.region === "Asia")
+console.log({ africanCountries })
+console.log({ asianCountries })
 /*  
   [
     {
