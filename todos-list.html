@@ -16,23 +16,45 @@
     <h1>Todos List</h1>
     <hr>
     <form onsubmit="addTodo(event)">
-        <input type="text">
-        <!-- <input type="reset"> -->
+        <input type="text" name="title">
         <button type="submit">submit</button>
-
     </form>
 
-    <ul>
-        <li>html</li>
-        <li>css</li>
-        <li>js</li>
+    <ul id="todo-list">
     </ul>
 
     <script>
+
+        
+        let todos = JSON.parse(localStorage.getItem("todos")) || []
+        let str = ``
+        todos.forEach(todoTitle => {
+            str = str + `<li>${todoTitle}</li>`
+        })
+
+        document.getElementById("todo-list").innerHTML = str
+
+
         const addTodo = (e) => {
+
             e.preventDefault()
+            todos.push(e.target.title.value)
+
+            console.log(todos)  // ['css', 'html', 'react',"node"]
+
+            let str = ``
+
+            todos.forEach(todoTitle => {
+                str = str + `<li>${todoTitle}</li>`
+            })
+
+            document.getElementById("todo-list").innerHTML = str
+            localStorage.setItem("todos", JSON.stringify(todos))
+
 
         }
+
+
     </script>
 
 </body>
