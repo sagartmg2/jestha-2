@@ -13,7 +13,7 @@ const printHello = () => {
 // setTimeout(printHello, 5000)
 setTimeout(() => {
     console.log("World")
-}, 0)
+}, 2000)
 
 
 /* Asynchronous functions
