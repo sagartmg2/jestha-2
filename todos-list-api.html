@@ -15,10 +15,8 @@
 <body>
 
     <h1>Todos List</h1>
-        <p>loading....</p>
-    <ul>
-        <li>title one</li>
-        <li>title jtwo</li>
+        <p id="loader">loading....</p>
+    <ul id="todo-list">
     </ul>
 
 
@@ -33,11 +31,19 @@
     //         console.log(data)
     //     })
 
-
     axios.get("https://dummyjson.com/todos")
         .then(res => {
             // console.log(res)
-            console.log(res.data.todos)
+            // console.log(res.data.todos)
+
+            document.getElementById("loader").innerHTML=""
+            let str = ``
+
+            res.data.todos.forEach(el =>{
+                str += `<li> ${el.todo} </li>`      
+            })
+
+            document.getElementById("todo-list").innerHTML = str
         })
 
 
