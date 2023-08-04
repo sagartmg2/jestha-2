@@ -38,10 +38,13 @@
                     let str = ``
 
                     res.data.data.forEach(el => {
-                        str += `<li> ${el.title}  <button>delete</button></li>`
+                        str += `<li> ${el.title}  <button onclick="deleteTodo('${el._id}')" >delete</button></li>`
                     })
 
                     document.getElementById("todo-list").innerHTML = str
+                })
+                .catch(err => {
+                    alert("error while fetching.. please try again later.")
                 })
 
         }
@@ -53,12 +56,22 @@
             event.preventDefault()
             axios.post("https://todo-api-sagartmg2.vercel.app/api/todos", {
                 title: event.target.title.value
-            }).then(res =>{
+            }).then(res => {
                 fetchTodos()
             })
 
         }
 
+        const deleteTodo = (id) => {
+            console.log("delelte...", id);
+            axios.delete(`https://todo-api-sagartmg2.vercel.app/api/todos/${id}`)
+                .then(res => {
+                    fetchTodos()
+                })
+                .catch(err => {
+                    alert("someting went wrong.")
+                })
+        }
 
 
 
